@@ -31,7 +31,7 @@ android {
 
         vectorDrawables.useSupportLibrary = true
 
-        val url = "https://newsapi.org/v2/"
+        val url = "https://api.giphy.com/v1/"
         buildConfigField("String", "BASE_URL", "\"$url\"")
     }
 
@@ -59,6 +59,8 @@ dependencies {
     implementation(Deps.Libs.Android.recyclerView.name)
 
     implementation(Deps.Libs.MultiPlatform.napier.android!!)
+    implementation(Deps.Libs.Android.constraintLayout.name)
+    implementation(Deps.Libs.Android.glide.name)
 
     implementation(project(":mpp-library"))
 }
